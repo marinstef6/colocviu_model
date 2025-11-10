@@ -44,6 +44,11 @@ public class model_colocviu extends AppCompatActivity {
 */
                 Intent intent = new Intent(getApplicationContext(), SecondActivityModelColocviu.class);
                 //aici a trebuit sa fac suma lor
+                /*int numberOfClicks = b;
+intent.putExtra(Constants.NUMBER_OF_CLICKS, numberOfClicks);
+intent.putExtra(Constants.NUMBER_OF_CLICKS, b);
+
+*/
                 int numberOfClicks = Integer.parseInt(text.getText().toString()) +
                         Integer.parseInt(text.getText().toString());
                 intent.putExtra(Constants.NUMBER_OF_CLICKS, numberOfClicks);
