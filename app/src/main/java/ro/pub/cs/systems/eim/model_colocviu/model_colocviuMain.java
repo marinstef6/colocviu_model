@@ -31,6 +31,17 @@ public class model_colocviu extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (view.getId() == R.id.navigate_to_sencondary_activity) {
+                /*if (view.getId() == R.id.navigate_to_sencondary_activity) {
+    Intent intent = new Intent(getApplicationContext(), SecondActivityModelColocviu.class);
+
+    // aici text este un TextView sau EditText
+    String direction = text.getText().toString();
+
+    intent.putExtra(Constants.DIRECTION, direction);
+
+    startActivityForResult(intent, Constants.SECONDARY_ACTIVITY_REQUEST_CODE);
+}
+*/
                 Intent intent = new Intent(getApplicationContext(), SecondActivityModelColocviu.class);
                 //aici a trebuit sa fac suma lor
                 int numberOfClicks = Integer.parseInt(text.getText().toString()) +
