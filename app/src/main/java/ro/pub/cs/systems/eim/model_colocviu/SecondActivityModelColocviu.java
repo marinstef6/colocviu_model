@@ -44,6 +44,8 @@ public class SecondActivityModelColocviu extends AppCompatActivity {
         numberofClick = (EditText) findViewById(R.id.editTextText2);
         Intent intent = getIntent();
         if (intent != null && intent.getExtras().containsKey(Constants.NUMBER_OF_CLICKS)) {
+            //String direction = getIntent().getStringExtra(Constants.DIRECTION); //pentru stringuri daca aduc din main
+
             int numberOfClicks = intent.getIntExtra(Constants.NUMBER_OF_CLICKS, -1);
             numberofClick.setText(String.valueOf(numberOfClicks));
         }
